@@ -1,0 +1,25 @@
+@import url("box.css");
+/* Permet de définir la dimension des box incluant Border & Padding */
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: #fff7ef;
+}
+  .main_title{ 
+     font-family: Arial, Helvetica, sans-serif ;
+     color: #bda47d;
+     text-align: center;
+     font-size: 50px;
+     padding: 20px;
+     margin: 0px;
+     border-bottom: 2px solid #a8aaab;
+     width : 75%;
+    }
+    .subtitle{
+     font-family: Arial, Helvetica, sans-serif;
+     color: #a8aaab;
+     text-align: center;
+     padding: 20px;
+     margin: 0px;
+}
