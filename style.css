@@ -22,4 +22,45 @@ body{
      text-align: center;
      padding: 20px;
      margin: 0px;
-}
+     font-size: 1em;
+    }
+    .section_title{
+        color: #5f94ab;
+        text-align: left;
+        padding : 10px;
+        margin : 5px;
+        border-bottom : 1px solid #5f94ab;
+        font-size: 1.3em;
+    }
+    .content{
+        font-size: 1em;
+        margin: 5px;
+    }
+    span{
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .quote{
+        color: #5f94ab;
+        text-align: center;
+        font-size: 1.3em;
+
+    }
+    li{
+        font-size: 1em;
+        color: #575757;
+        padding: 0px;
+        margin: 5px;
+        /* border: 1px solid black; */
+    }
+    ul{
+        list-style: circle;
+    }
+
+    .section_subtitle{
+        font-size: 1em;
+        color: #575757;
+    }
+    .cloud_idea{
+        margin: 30px;
+    }
