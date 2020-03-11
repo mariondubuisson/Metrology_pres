@@ -46,15 +46,19 @@ body{
         font-size: 1.3em;
 
     }
+    img{
+        vertical-align: middle;
+    }
     li{
         font-size: 1em;
         color: #575757;
         padding: 0px;
         margin: 5px;
         /* border: 1px solid black; */
+        text-align: center;
     }
     ul{
-        list-style: circle;
+        list-style: none;
     }
 
     .section_subtitle{
