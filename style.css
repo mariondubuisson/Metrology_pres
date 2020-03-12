@@ -38,7 +38,7 @@ body{
     }
     span{
         font-size: 1em;
-        font-weight: bold;
+        margin: 10px;
     }
     .quote{
         color: #5f94ab;
@@ -57,14 +57,14 @@ body{
         /* border: 1px solid black; */
         text-align: center;
     }
-    ul{
-        list-style: none;
-    }
-
+    
     .section_subtitle{
         font-size: 1em;
         color: #575757;
     }
     .cloud_idea{
-        margin: 30px;
+        font-weight: bold;
+        color : #c0c1c1;
+        
     }
+
