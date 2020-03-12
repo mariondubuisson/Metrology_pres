@@ -49,6 +49,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    border-radius: 10px;
+    border: 2px outset #c0c1c1;
+    width: 60%;
+    align-self: center;
+    background-color: white;
 }
 
 
