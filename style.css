@@ -62,9 +62,26 @@ body{
         font-size: 1em;
         color: #575757;
     }
-    .cloud_idea{
-        font-weight: bold;
-        color : #c0c1c1;
-        
+    /* see with js how to positionate the word in the cloud_ideas_container */
+    .cloud_idea_1{
+        font-size: large;        
+    }
+    .cloud_idea_2{
+       font-size: medium;        
+    }
+    .cloud_idea_3{
+        font-size: x-large;        
+    }
+    .cloud_idea_4{
+        font-size: small;        
+    }
+    .cloud_idea_5{
+        font-size: large;        
+    }
+    .cloud_idea_6{
+        font-size: medium;        
+    }
+    .cloud_idea_7{
+       font-size: large;        
     }
 
