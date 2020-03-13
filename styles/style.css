@@ -1,4 +1,5 @@
 @import url("box.css");
+@import url("accordeon.css");
 /* Permet de définir la dimension des box incluant Border & Padding */
 * {
   box-sizing: border-box;
@@ -23,14 +24,6 @@ body {
   padding: 20px;
   margin: 0px;
   font-size: 1em;
-}
-.section_title {
-  color: #5f94ab;
-  text-align: left;
-  padding: 10px;
-  margin: 5px;
-  border-bottom: 1px solid #5f94ab;
-  font-size: 1.3em;
 }
 .content {
   font-size: 1em;

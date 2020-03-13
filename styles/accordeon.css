@@ -1,0 +1,40 @@
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  /* border : 1px solid black; */
+  align-items: center;
+}
+
+.accordeon_section {
+  display: flex;
+  flex-direction: column;
+
+  /* border : 1px solid black; */
+  width: 75%;
+  padding: 0px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordeon_section_title {
+  cursor: pointer;
+  color: #5f94ab;
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+  border-bottom: 1px solid #5f94ab;
+  font-size: 1.3em;
+}
+/* the accordeon must be improve ! */
+.accordeon_section_content {
+  display: flex;
+  flex-direction: column;
+  max-height: 1000px;
+  transition: max-height 1s;
+  justify-content: center;
+}
+
+.accordeon_section_content--hide {
+  overflow: hidden;
+  max-height: 0;
+}
