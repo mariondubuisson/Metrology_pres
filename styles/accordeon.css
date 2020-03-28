@@ -32,6 +32,7 @@
   max-height: 1000px;
   transition: max-height 1s;
   justify-content: center;
+  overflow: hidden;
 }
 
 .accordeon_section_content--hide {
