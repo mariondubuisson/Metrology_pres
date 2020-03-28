@@ -20,7 +20,6 @@
   color: #c0c1c1;
   font-family: Arial, Helvetica, sans-serif;
   width: 75%;
-  border: 1px solid black;
   padding: 2em;
 }
 .examples_container {
@@ -29,6 +28,7 @@
   font-weight: normal;
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
