@@ -30,8 +30,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  /* border-radius: 10px; */
-  /* border: 0.5px outset var(--brown); */
+  box-shadow: var(--shadowSet);
+  margin: 5px;
   width: 60%;
   align-self: center;
   background-color: white;
