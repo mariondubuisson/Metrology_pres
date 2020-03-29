@@ -1,15 +1,23 @@
 /* Timeline general style */
 .timeline_container {
-  --margin: 15px;
-  --pointRadius: 5px;
+  --margin: 20px;
+  --pointRadius: 7px;
   --itemBackground: white;
   --timelineColor: var(--lightGrey);
   --pointColor: var(--brown);
   --titleColor: var(--brown);
 
-  height: 500px;
+  width: 100%;
   margin: 0px;
   position: relative;
+}
+
+/* height of the timeline container */
+.timeline_equipment {
+  height: 502px;
+}
+.timeline_project {
+  height: 300px;
 }
 
 .timeline_container::before {
@@ -38,7 +46,7 @@
   display: flex;
   flex: 1;
   align-items: center;
-
+  line-height: 2em;
   font-size: 0.8em;
 }
 
