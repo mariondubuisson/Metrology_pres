@@ -2,10 +2,10 @@
 .timeline_container {
   --margin: 15px;
   --pointRadius: 5px;
-  --itemBackground: var(--lightGrey);
+  --itemBackground: var(--lightBrown);
   --timelineColor: var(--lightGrey);
-  --pointColor: var(--darkBlue);
-  --timeColor: var(--darkBlue);
+  --pointColor: var(--brown);
+  --titleColor: var(--brown);
 
   height: 500px;
   margin: 0px;
@@ -25,12 +25,21 @@
 .timeline_title {
   display: flex;
   align-items: center;
-  color: var(--timeColor);
+  color: var(--titleColor);
   font-weight: bold;
   border-bottom: 1px solid white;
   height: 2.5em;
   margin: 0;
+  text-transform: uppercase;
   /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); */
+}
+
+.timeline_content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  font-size: 0.8em;
 }
 
 .timeline_item {
@@ -41,6 +50,8 @@
   height: calc(50% - 2 * var(--margin));
   position: absolute;
   top: 50%;
+  display: flex;
+  flex-direction: column;
 }
 /* general style of timeline element (arrows and point) */
 /* POINT */
@@ -136,206 +147,4 @@
 
 .timeline_item:nth-child(10) {
   left: calc(1000% / (var(--n) + 1));
-}
-
-/* button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-} */
-
-/* .section SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.section {
-  padding: 50px 0;
-}
-
-/* .section .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section h1 {
-  font-size: 2.5rem;
-}
-
-.section h2 {
-  font-size: 1.3rem;
-} */
-
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* .timeline {
-  white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  /* overflow-x: hidden;
-}*/
-
-.timeline ol {
-  font-size: 0;
-  width: 100vw;
-  padding: 200px 0;
-  transition: all 1s;
-}
-
-.timeline ol li {
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  width: 50px;
-  height: 3px;
-  background: #fff;
-  margin: 0px;
-}
-
-.timeline ol li:first-child {
-  position: relative;
-  display: inline-block;
-  list-style: none;
-  width: 50px;
-  background: transparent;
-}
-
-.timeline ol li:after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 1px);
-  bottom: 0;
-  width: 12px;
-  height: 12px;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background: #b65b6a;
-}
-
-.timeline ol li div {
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: calc(100% + 7px);
-  width: calc(100 / 2);
-  padding: 15px;
-  font-size: 1rem;
-  white-space: normal;
-  color: black;
-  background: white;
-}
-
-.timeline ol li div::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.timeline ol li:nth-child(odd) div {
-  top: -16px;
-  transform: translateY(-100%);
-}
-
-.timeline ol li:nth-child(odd) div::before {
-  top: 100%;
-  border-width: 8px 8px 0 0;
-  border-color: white transparent transparent transparent;
-}
-
-.timeline ol li:nth-child(even) div {
-  top: calc(100% + 16px);
-}
-
-.timeline ol li:nth-child(even) div::before {
-  top: -8px;
-  border-width: 8px 0 0 8px;
-  border-color: transparent transparent transparent white;
-}
-
-/* TIMELINE ARROWS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline .arrows {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.timeline .arrows .arrow__prev {
-  margin-right: 20px;
-}
-
-.timeline .disabled {
-  opacity: 0.5;
-}
-
-.timeline .arrows img {
-  width: 45px;
-  height: 45px;
-}
-
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 599px) {
-  .timeline ol,
-  .timeline ol li {
-    width: auto;
-  }
-
-  .timeline ol {
-    padding: 0;
-    transform: none !important;
-  }
-
-  .timeline ol li {
-    display: block;
-    height: auto;
-    background: transparent;
-  }
-
-  .timeline ol li:first-child {
-    margin-top: 25px;
-  }
-
-  .timeline ol li:not(:first-child) {
-    margin-left: auto;
-  }
-
-  .timeline ol li div {
-    width: 94%;
-    height: auto !important;
-    margin: 0 auto 25px;
-  }
-
-  .timeline ol li div {
-    position: static;
-  }
-
-  .timeline ol li:nth-child(odd) div {
-    transform: none;
-  }
-
-  .timeline ol li:nth-child(odd) div::before,
-  .timeline ol li:nth-child(even) div::before {
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    border: none;
-    border-left: 1px solid white;
-    height: 25px;
-  }
-
-  .timeline ol li:last-child,
-  .timeline ol li:nth-last-child(2) div::before,
-  .timeline ol li:not(:last-child)::after,
-  .timeline .arrows {
-    display: none;
-  }
 }

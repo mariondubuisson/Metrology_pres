@@ -9,6 +9,7 @@
 }
 body {
   --brown: #bda47d;
+  --lightBrown: #f0ece5;
   --darkGrey: #575757;
   --grey: #a8aaab;
   --lightGrey: #e4e4e4;
@@ -17,10 +18,10 @@ body {
   --green: #b0b932;
   --red: #b61a1d;
   --orange: #d67c1c;
-  background-color: #fff7ef;
+  background-color: ##f7f5f2;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .main_title {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--brown);
   text-align: center;
   font-size: 50px;
@@ -30,7 +31,6 @@ body {
   width: 75%;
 }
 .subtitle {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--grey);
   text-align: center;
   padding: 20px;
