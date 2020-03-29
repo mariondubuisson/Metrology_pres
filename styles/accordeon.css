@@ -18,11 +18,11 @@
 
 .accordeon_section_title {
   cursor: pointer;
-  color: #5f94ab;
+  color: var(--darkBlue);
   text-align: left;
   padding: 10px;
   margin: 5px;
-  border-bottom: 1px solid #5f94ab;
+  border-bottom: 1px solid var(--darkBlue);
   font-size: 1.3em;
 }
 /* the accordeon must be improve ! */

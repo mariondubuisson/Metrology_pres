@@ -1,25 +1,37 @@
 @import url("box.css");
 @import url("accordeon.css");
+@import url("timeline.css");
 /* Permet de définir la dimension des box incluant Border & Padding */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 body {
+  --brown: #bda47d;
+  --darkGrey: #575757;
+  --grey: #a8aaab;
+  --lightGrey: #e4e4e4;
+  --darkBlue: #5f94ab;
+  --lightBlue: #99bdd5;
+  --green: #b0b932;
+  --red: #b61a1d;
+  --orange: #d67c1c;
   background-color: #fff7ef;
 }
 .main_title {
   font-family: Arial, Helvetica, sans-serif;
-  color: #bda47d;
+  color: var(--brown);
   text-align: center;
   font-size: 50px;
   padding: 20px;
   margin: 0px;
-  border-bottom: 2px solid #a8aaab;
+  border-bottom: 2px solid var(--grey);
   width: 75%;
 }
 .subtitle {
   font-family: Arial, Helvetica, sans-serif;
-  color: #a8aaab;
+  color: var(--grey);
   text-align: center;
   padding: 20px;
   margin: 0px;
@@ -34,7 +46,7 @@ body {
   font-weight: bold;
 }
 .quote {
-  color: #bda47d;
+  color: var(--brown);
   text-align: center;
   font-size: 1.3em;
   margin: 15px;
@@ -44,7 +56,7 @@ img {
 }
 li {
   font-size: 1em;
-  color: #575757;
+  color: var(--darkGrey);
   padding: 0px;
   margin: 5px;
   /* border: 1px solid black; */
@@ -53,7 +65,7 @@ li {
 
 .section_subtitle {
   font-size: 1em;
-  color: #575757;
+  color: var(--darkGrey);
 }
 
 .example_container {
