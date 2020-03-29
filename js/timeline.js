@@ -1,3 +1,5 @@
+window.alert("timelinejs");
+
 class Timeline {
   constructor(containerRef) {
     this.containerRef = containerRef;
