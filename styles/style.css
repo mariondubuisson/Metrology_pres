@@ -18,7 +18,7 @@ body {
   --green: #b0b932;
   --red: #b61a1d;
   --orange: #d67c1c;
-  background-color: ##f7f5f2;
+  background-color: #f7f5f2;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .main_title {
@@ -48,7 +48,7 @@ body {
 .quote {
   color: var(--brown);
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin: 15px;
 }
 img {

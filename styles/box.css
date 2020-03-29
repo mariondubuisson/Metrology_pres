@@ -17,22 +17,21 @@
   align-self: center;
   font-size: large;
   font-weight: bold;
-  color: var(--lightGrey);
+  color: var(--grey);
 
   width: 75%;
   padding: 2em;
 }
 .examples_container {
   color: var(--darkGrey);
-  font-weight: normal;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  border-radius: 10px;
-  border: 2px outset var(--lightGrey);
+  /* border-radius: 10px; */
+  /* border: 0.5px outset var(--brown); */
   width: 60%;
   align-self: center;
   background-color: white;
