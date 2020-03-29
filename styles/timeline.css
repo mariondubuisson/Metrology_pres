@@ -2,7 +2,6 @@
 .timeline_container {
   --margin: 15px;
   --pointRadius: 5px;
-  --n: 5;
   --itemBackground: var(--lightGrey);
   --timelineColor: var(--lightGrey);
   --pointColor: var(--darkBlue);
@@ -28,7 +27,7 @@
   align-items: center;
   color: var(--timeColor);
   font-weight: bold;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   height: 2.5em;
   margin: 0;
   /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); */
