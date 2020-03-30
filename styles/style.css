@@ -30,6 +30,7 @@ body {
   margin: 0px;
   border-bottom: 2px solid var(--grey);
   width: 75%;
+  text-transform: uppercase;
 }
 .subtitle {
   color: var(--grey);
