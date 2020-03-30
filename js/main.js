@@ -1,7 +1,7 @@
-// const accordeon = new Accordeon(document.querySelector(".accordeon"));
+const accordeon = new Accordeon(document.querySelector(".accordeon"));
 
-// accordeon.initAccordeon();
-window.alert("mainjs");
+accordeon.initAccordeon();
+// window.alert("mainjs");
 
 const timelineEls = document.querySelectorAll(".timeline_container");
 

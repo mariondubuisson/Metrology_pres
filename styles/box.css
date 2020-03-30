@@ -24,6 +24,7 @@
 }
 .examples_container {
   color: var(--darkGrey);
+
   display: flex;
   justify-content: center;
   text-align: center;

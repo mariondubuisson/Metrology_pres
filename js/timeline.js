@@ -1,4 +1,4 @@
-window.alert("timelinejs");
+//window.alert("timelinejs");
 
 class Timeline {
   constructor(containerRef) {
