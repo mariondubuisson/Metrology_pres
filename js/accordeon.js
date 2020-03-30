@@ -31,3 +31,5 @@ class Accordeon {
     this.addOnClickListenerOnSectionTitles();
   };
 }
+
+export { Accordeon };

@@ -17,3 +17,5 @@ class Timeline {
     this.containerRef.style.setProperty("--n", this.itemsNumber);
   };
 }
+
+export { Timeline };
