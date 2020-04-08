@@ -33,7 +33,7 @@
       <!-- QUOI SECTION -->
 
       <section class="accordeon_section">
-        <h2 class="accordeon_section_title">Quoi</h2>
+        <h2 class="accordeon_section_title">Quoi ?</h2>
         <div class="accordeon_section_content">
           <p class="content">
             Métrologie = science de la mesure <br />
@@ -49,8 +49,8 @@
               ><img
                 src="img/IMG_0282.png"
                 alt="physic_symbol"
-                width="60px"
-                height="60px"
+                width="100px"
+                height="100px"
             /></span>
             <span class="examples"
               >Quantifier un phénomène physique ou une réaction chimique</span
@@ -59,8 +59,8 @@
               ><img
                 src="img/chemestry_symbol.png"
                 alt="chemestry_symbol"
-                width="63px"
-                height="53px"
+                width="100px"
+                height="84px"
             /></span>
             <span class="examples"
               >Déterminer les propriétés ou les caractéristiques d'un produit /
@@ -79,12 +79,10 @@
           </p>
           <div class="examples_container">
             <div class="pyramid-container">
-              <div class="pyramid-level-6"></div>
-              <div class="pyramid-level-5">SI</div>
-              <div class="pyramid-level-4">Etalon primaire</div>
-              <div class="pyramid-level-3">Etalon secondaire</div>
-              <div class="pyramid-level-2">Equipement de mesure</div>
-              <!-- <div class="pyramid-level-1">4<br />Psychologie</div> -->
+              <div class="pyramid_level"><span>SI</span></div>
+              <div class="pyramid_level"><span>Etalon primaire</span></div>
+              <div class="pyramid_level"><span>Etalon secondaire</span></div>
+              <div class="pyramid_level"><span>Equipement de mesure</span></div>
             </div>
             <p class="examples">
               Pyramide de raccordement au système international par
@@ -124,48 +122,53 @@
       <section class="accordeon_section">
         <h2 class="accordeon_section_title">Qui ?</h2>
         <div class="accordeon_section_content">
-          <section class="logigram_container">
+          <section class="logigram_top_container">
             <div class="logigram_item">
               <h3 class="logigram_item_title">Client</h3>
-              <div class="logigram_item_content">
+              <p class="logigram_item_content">
                 Il défini le niveau d'exigence en fonction de son besoin
-              </div>
+              </p>
             </div>
             <div class="logigram_item">
-              <h3 class="logigram_item_title">Equipe projet</h3>
-              <div class="logigram_item_content">
-                Chef de projet ou chef de pôle<br />
-                Ingénieurs et techniciens<br />
-                Animateur métrologie
-              </div>
+              <h3 class="logigram_item_title">Equipe projet <br /></h3>
+              <p class="logigram_item_content">
+                Elle étudie la demande du client et évalue sa faisabilité<br />
+                Elle propose au client une solution, coordonne et réalise les
+                mesures
+              </p>
             </div>
+          </section>
+          <section class="row_container">
             <div class="logigram_item">
               <h3 class="logigram_item_title">
                 Laboratoire central de métrologie
               </h3>
-              <div class="logigram_item_content">
+              <p class="logigram_item_content">
                 Il pilote la fonction métrologie au CSTB<br />
-                Réalise des raccordement métrologiques<br />
+                Réalise des raccordements métrologiques<br />
                 Défini les procédures, et assure la traçabilité au SI<br />
                 Accompagne les équipes et coordonne la sous-traitance
                 (raccordement métrologique effectué à l'extérieur)
-              </div>
+              </p>
             </div>
             <div class="logigram_item">
               <h3 class="logigram_item_title">
-                Prestataire métrologie extérieur
+                Prestataire métrologie sous-traitant
               </h3>
               <div class="logigram_item_content">
-                Effectue les raccordement métrologiques que le LCM ne peut pas
-                faire
+                Il réalise les raccordements métrologiques que le LCM ne peut
+                pas faire
               </div>
             </div>
           </section>
-          <p class="content">Qu'est-ce que vous vendez à vos clients ?</p>
+
           <div class="examples_container">
-            <span class="examples">Des résultats de mesure</span>
+            <span class="examples important_thing"
+              >Qu'est-ce que vous vendez à vos clients ?</span
+            >
             <span class="examples"
-              ><img
+              >Des résultats de mesure<br />
+              <img
                 src="img/thermometer.png"
                 alt="thermometer_symbol"
                 width="26px"
@@ -176,13 +179,13 @@
                 alt="thermometer_symbol"
                 width="48px"
                 height="70px"
-                style="margin-left: 4em;"
+                style="margin-left: 2em;"
               />
             </span>
 
-            <span class="examples">Des interprétations, une expertise</span>
             <span class="examples"
-              ><img
+              >Des interprétations, une expertise<br />
+              <img
                 src="img/loupe_symbol.png"
                 alt="chemestry_symbol"
                 width="88px"
@@ -216,24 +219,62 @@
           </p>
 
           <p class="content">
-            <span class="important_thing">Erreur</span> : c'est l'écart entre
-            l'indication de notre appareil et celle de l'étalon. On peut la
-            corriger par une régression, mais il restera toujours un résidu
-            (appelé erreur d'interpolation).
+            <span class="important_thing"
+              >Contrôle ou vérification intermédiaire</span
+            >
+            : c'est contrôler avant et/ou après un essais que la réponse de
+            l'équipement est comprise dans un tunnel d'acceptabilité.<br />On en
+            déduit si l'équipement dérive ou s'il y a une anomalie sur la chaîne
+            de mesure.
           </p>
 
-          <p class="content">
-            <span class="important_thing">Incertitude</span> : c'est quantifier
-            le <span class="important_thing"> doute</span> que l'on a dans une
-            mesure. Pour cela, on utilise les informations à notre disposition
-            (incertitude d'étalonnage, erreur, dérive, stabilité, répétabilité
-            influence de la température ...). Si on n'a pas ou peu
-            d'informations, l'incertitude peut être très grande.
-          </p>
+          <section class="row_container">
+            <div class="logigram_item">
+              <h3 class="logigram_item_title">LCM et prestataire métro</h3>
+              <p class="logigram_item_content">
+                Etalonnage<br />
+                Vérification
+              </p>
+            </div>
+
+            <div class="logigram_item">
+              <h3 class="logigram_item_title">Labo de mesure et d'essais</h3>
+              <p class="logigram_item_content">
+                Etalonnage ou vérification sur certaines grandeurs (habilitation
+                par le LCM)<br />
+                Contrôles ou vérifications intermédiaires<br />
+              </p>
+            </div>
+          </section>
         </div>
       </section>
 
       <!-- QUAND SECTION -->
+      <section class="accordeon_section">
+        <h2 class="accordeon_section_title">Quand ?</h2>
+        <div class="accordeon_section_content">
+          <h3 class="section_subtitle">Lors de l'étude de faisabilité</h3>
+          <p class="content">
+            Définir le niveau de maîtrise attendu (mesure, essai à la demande ou
+            essai accrédité)<br />
+            Identifier les équipements de mesure<br />
+            Identifier la méthode de mesure<br />
+            Planifier les raccordements métrologiques si besoin
+          </p>
+          <h3 class="section_subtitle">Lors des mesures</h3>
+          <p class="content">
+            Réaliser et enregistrer les contrôles et vérifications
+            intermédiaires prévues<br />
+            S'assurer que l'équipement est utilisé comme prévu (plage de
+            fonctionnement, réglage, méthode)
+          </p>
+          <h3 class="section_subtitle">Lors de l'exploitation des résultats</h3>
+          <p class="content">
+            Corriger les mesures à partir des données d'étalonnage<br />
+            Evaluer les incertitudes de mesure
+          </p>
+        </div>
+      </section>
 
       <!-- COMMENT SECTION -->
 
@@ -241,16 +282,11 @@
         <h2 class="accordeon_section_title">Comment ?</h2>
         <div class="accordeon_section_content">
           <h3 class="section_subtitle">
-            Utiliser les données d'un certificat d'étalonnage
-          </h3>
-          <img
-            src="img/Process.jpg"
-            alt="calibration_process"
-            style="margin: 20px; align-self: center;"
-          />
-          <h3 class="section_subtitle">
             Processus de raccordement et de suivi des équipements de mesure
           </h3>
+
+          <!-- Equipment Timeline -->
+
           <section class="timeline_container timeline_equipment">
             <div class="timeline_item">
               <h4 class="timeline_title">Achat</h4>
@@ -284,7 +320,7 @@
             </div>
 
             <div class="timeline_item">
-              <h4 class="timeline_title">Contrôle en service</h4>
+              <h4 class="timeline_title">Vérification intermédiaire</h4>
               <p class="timeline_content">
                 Moyen interne de s'assurer avant ou après un essai que
                 l'équipement ne dérive pas, dans une certaine mesure (à définir)
@@ -302,81 +338,46 @@
               </p>
             </div>
           </section>
-          <!-- <li>
-      Au CSTB : qui est le LCM quelles sont ses missions. Qui sont les
-      animateurs métro : quelles sont leurs missions ? Quels outils ?
-    </li> -->
+
+          <h3 class="section_subtitle">Définitions</h3>
           <p class="content">
-            Au CSTB, le Laboratoire Central de Métrologie (LCM) pilote la
-            fonction métrologie (procédure, outils, coordination) et garantis le
-            raccordement au
-            <a
-              href="https://www.bipm.org/fr/measurement-units/"
-              class="link"
-              target="_blank"
-              >système international</a
-            >.<br />
+            <span class="important_thing">Erreur</span> : c'est l'écart entre
+            l'indication de notre appareil et celle de l'étalon. On peut la
+            corriger par une régression, mais il restera toujours un résidu
+            (appelé erreur d'interpolation).
+          </p>
+
+          <p class="content">
+            <span class="important_thing">Incertitude</span> : c'est quantifier
+            le <span class="important_thing"> doute</span> que l'on a dans une
+            mesure. Pour cela, on utilise les informations à notre disposition
+            (incertitude d'étalonnage, erreur, dérive, stabilité, répétabilité
+            influence de la température ...). Si on n'a pas ou peu
+            d'informations, l'incertitude peut être très grande.
+          </p>
+
+          <h3 class="section_subtitle">
+            Utiliser les données d'un certificat d'étalonnage
+          </h3>
+          <img
+            src="img/Process.jpg"
+            alt="calibration_process"
+            style="margin: 20px; align-self: center;"
+          />
+
+          <p class="content">
+            La procédure DT/AME décrit en détail le suivi des équipements de
+            mesure au CSTB
+            <br />
             Toutes les informations sur les équipements de mesure, sont
             accessibles par tous via la base
             <a
               href="https://metrologie.cstb.local/"
               class="link"
               target="_blank"
-            >
-              fiche de vie</a
+              >fiche de vie</a
             >.
           </p>
-
-          <h3 class="section_subtitle">
-            Intégration dans le processus affaire : traçabilité
-          </h3>
-          <section class="timeline_container timeline_project">
-            <div class="timeline_item">
-              <h4 class="timeline_title">Demande du Client</h4>
-            </div>
-            <div class="timeline_item">
-              <h4 class="timeline_title">Etude de faisabilité</h4>
-              <p class="timeline_content">
-                Identifier la méthode et le matériel de mesure
-              </p>
-            </div>
-            <div class="timeline_item">
-              <h4 class="timeline_title">Envoi de l'offre</h4>
-            </div>
-            <div class="timeline_item">
-              <h4 class="timeline_title">Retour Client</h4>
-            </div>
-            <div class="timeline_item">
-              <h4 class="timeline_title">Planification</h4>
-              <p class="timeline_content">
-                Préparation des essais <br />
-                Etalonnage, vérification ou contrôles à prévoir <br />
-                Réalisation des essais
-              </p>
-            </div>
-            <div class="timeline_item">
-              <h4 class="timeline_title">Exploitation des mesures</h4>
-              <p class="timeline_content">
-                Utilisation des corrections <br />
-                Evaluation de l'incertitude
-              </p>
-            </div>
-            <div class="timeline_item">
-              <h4 class="timeline_title">Envoi du rapport</h4>
-            </div>
-            <!-- <ul>
-        <li>Quelle méthode : quelles limites / hypothèses</li>
-        <li>
-          Identification du matériel : quelles performances dans quelles
-          limites ?
-        </li>
-        <li>
-          Traitement des données : corrections ? Traitement statistiques,
-          moyen ou temporel ?
-        </li>
-        <li>Maîtrise du risque : calcul d'incertitudes</li>
-      </ul> -->
-          </section>
         </div>
       </section>
 
@@ -388,15 +389,13 @@
           <p class="content">
             Prendre en considération tous les aspects théoriques et pratiques
             ainsi que leurs limites lors d'une mesure permet d'en
-            <span class="important_thing">assurer la validité</span> voire
-            d'évaluer le niveau de confiance que l'on a dans cette mesure
-            (incertitude de mesure)
+            <span class="important_thing">assurer la validité</span>
           </p>
           <div class="cloud_ideas_container">
             <span class="cloud_idea_1">Confiance</span>
             <span class="cloud_idea_2">Maîtrise</span>
             <span class="cloud_idea_3">Traçabilité</span>
-            <span class="cloud_idea_4">fiabilité</span>
+            <span class="cloud_idea_4">Fiabilité</span>
             <span class="cloud_idea_5">Robustesse</span>
             <span class="cloud_idea_6">Gain de temps</span>
             <span class="cloud_idea_7">Gain d'énergie</span>
@@ -406,13 +405,9 @@
             <span class="important_thing"
               >connaître leur biais et donc de maîtriser le doute </span
             >(diminuer l'incertitude) autour de la mesure. <br />
-            D'autres facteurs peuvent avoir une influence sur le résultat, des
-            études de
-            <span class="important_thing">
-              répétabilité ou de reproductibilité</span
-            >, des
-            <span class="important_thing">campagnes interlaboratoires</span>
-            ou une bibliographie peut permettre de quantifier ces facteurs.
+            En identifiant avec le client le niveau de maîtrise attendu des
+            résultats, on optimise les efforts à fournir et assure une
+            traçabilité de l'affaire.
           </p>
         </div>
       </section>

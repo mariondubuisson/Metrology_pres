@@ -7,13 +7,20 @@
 
 .logigram_item_title {
   margin: 10px;
-  border-bottom: 1px solid black;
+  color: var(--brown);
+  border-bottom: 1px solid var(--brown);
   padding: 10px;
   font-weight: normal;
 }
 
+.logigram_item_title span {
+  font-size: 0.8em;
+  color: black;
+}
+
 .logigram_item_content {
   text-align: center;
+  color: black;
   padding: 10px;
   font-size: 0.8em;
   line-height: 2em;

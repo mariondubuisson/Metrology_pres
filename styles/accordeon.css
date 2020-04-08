@@ -32,6 +32,9 @@
   transition: max-height 1s;
   justify-content: center;
   overflow: hidden;
+  width: 80%;
+  align-self: center;
+  max-width: 800px;
 }
 
 .accordeon_section_content--hide {

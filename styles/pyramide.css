@@ -3,77 +3,49 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: black;
+  color: white;
   margin: 30px;
 }
 
-.pyramid-level-6 {
-  position: relative;
-  border-bottom: 50px solid var(--darkBlue);
+.pyramid_level {
+  border-bottom: 50px solid black;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  height: 0;
-  width: 50px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.pyramid-level-5 {
-  border-bottom: 50px solid var(--darkBlue);
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  line-height: 22px;
+  line-height: 1.3em;
   height: 50px;
-  width: 100px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.pyramid-level-4 {
   border-top: 3px solid transparent;
-  border-bottom: 50px solid var(--green);
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  line-height: 22px;
-  height: 0;
-  width: 150px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.pyramid-level-3 {
-  border-top: 3px solid transparent;
-  border-bottom: 50px solid var(--red);
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  line-height: 22px;
-  height: 0;
-  width: 200px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.pyramid-level-2 {
-  border-top: 3px solid transparent;
-  border-bottom: 50px solid var(--orange);
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  line-height: 22px;
-  height: 0;
-  width: 250px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.pyramid-level-1 {
   position: relative;
-  border-top: 3px solid transparent;
-  border-bottom: 50px solid red;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  line-height: 22px;
-  height: 0;
-  width: 300px;
-  margin-right: auto;
-  margin-left: auto;
+}
+
+.pyramid_level span {
+  position: absolute;
+  top: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.pyramid_level:first-child span {
+  top: 50px;
+  transform: translate(-50%, 0%);
+}
+
+.pyramid_level:nth-child(1) {
+  width: 100px;
+  border-bottom: 100px solid var(--darkBlue);
+  border-left-width: 50px;
+  border-right-width: 50px;
+}
+
+.pyramid_level:nth-child(2) {
+  width: 150px;
+  border-bottom-color: var(--green);
+}
+.pyramid_level:nth-child(3) {
+  width: 200px;
+  border-bottom-color: var(--red);
+}
+.pyramid_level:nth-child(4) {
+  width: 250px;
+  border-bottom-color: var(--orange);
 }

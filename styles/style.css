@@ -44,7 +44,7 @@ body {
 }
 .content {
   font-size: 1em;
-  margin: 5px;
+  margin: 20px;
   line-height: 2em;
 }
 .important_thing {
@@ -55,7 +55,7 @@ body {
   color: var(--brown);
   text-align: center;
   font-size: 1.2em;
-  margin: 15px;
+  margin: 30px;
 }
 img {
   vertical-align: middle;
@@ -81,7 +81,7 @@ li {
 
 .examples {
   font-size: 1em;
-  margin: 15px;
+  margin: 30px;
   line-height: 2em;
 }
 /* see with js how to positionate the word in the cloud_ideas_container */
