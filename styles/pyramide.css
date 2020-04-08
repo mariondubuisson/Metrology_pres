@@ -1,0 +1,79 @@
+.pyramid-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  margin: 30px;
+}
+
+.pyramid-level-6 {
+  position: relative;
+  border-bottom: 50px solid var(--darkBlue);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pyramid-level-5 {
+  border-bottom: 50px solid var(--darkBlue);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  line-height: 22px;
+  height: 50px;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pyramid-level-4 {
+  border-top: 3px solid transparent;
+  border-bottom: 50px solid var(--green);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  line-height: 22px;
+  height: 0;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pyramid-level-3 {
+  border-top: 3px solid transparent;
+  border-bottom: 50px solid var(--red);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  line-height: 22px;
+  height: 0;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pyramid-level-2 {
+  border-top: 3px solid transparent;
+  border-bottom: 50px solid var(--orange);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  line-height: 22px;
+  height: 0;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pyramid-level-1 {
+  position: relative;
+  border-top: 3px solid transparent;
+  border-bottom: 50px solid red;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  line-height: 22px;
+  height: 0;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}

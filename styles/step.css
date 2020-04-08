@@ -1,0 +1,40 @@
+.step_1 {
+  width: 150px;
+  height: 150px;
+  background-color: var(--lightBrown);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.step_2 {
+  width: 150px;
+  height: 200px;
+  background-color: var(--lightGrey);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.step_3 {
+  width: 150px;
+  height: 250px;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.step_title {
+  color: var(--darkGrey);
+  margin: 10px;
+  padding: 5px;
+  border-bottom: 1px solid var(--darkGrey);
+}
+
+.step_content {
+  margin: 10px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}

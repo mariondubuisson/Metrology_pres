@@ -1,6 +1,9 @@
 @import url("box.css");
 @import url("accordeon.css");
 @import url("timeline.css");
+@import url("pyramide.css");
+@import url("step.css");
+@import url("logigram.css");
 /* Permet de définir la dimension des box incluant Border & Padding */
 *,
 *::after,
@@ -69,11 +72,6 @@ li {
 .section_subtitle {
   font-size: 1em;
   color: var(--darkGrey);
-}
-
-.example_container {
-  font-size: 1em;
-  padding: 20px;
 }
 
 .link {

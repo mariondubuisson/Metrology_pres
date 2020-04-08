@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!-- This is the menu for the presentation about metrology -->
+    <!-- This is the the front page -->
     <section class="title_section">
       <h1 class="main_title">La métrologie</h1>
       <p class="subtitle">
@@ -27,16 +27,21 @@
         ensemble
       </p>
     </section>
+    <!-- End of the front page -->
+
     <div class="accordeon">
+      <!-- QUOI SECTION -->
+
       <section class="accordeon_section">
-        <h2 class="accordeon_section_title">Quand ?</h2>
+        <h2 class="accordeon_section_title">Quoi</h2>
         <div class="accordeon_section_content">
           <p class="content">
-            Métrologie : science de la mesure <br />
+            Métrologie = science de la mesure <br />
             Discipline qui comprend tous les aspects théoriques et pratiques des
             mesurages. <br />
-            Elle rassemble l'ensemble des techniques permettant de réaliser des
-            mesures, de les interpréter et d'assurer leur fiabilité.
+            Elle rassemble l'ensemble des techniques et savoirs faire qui
+            permettent de réaliser des mesures, de les interpréter et d'assurer
+            leur fiabilité.
           </p>
 
           <div class="examples_container">
@@ -63,45 +68,99 @@
             >
           </div>
           <h3 class="quote">S'il y a mesure il y a métrologie</h3>
-        </div>
-      </section>
-      <section class="accordeon_section">
-        <h2 class="accordeon_section_title">Pourquoi ?</h2>
-        <div class="accordeon_section_content">
           <p class="content">
-            Prendre en considération tous les aspects théoriques et pratiques
-            ainsi que leurs limites lors d'une mesure permet d'en
-            <span class="important_thing">assurer la validité</span> voire
-            d'évaluer le niveau de confiance que l'on a dans cette mesure
-            (incertitude de mesure)
+            La science de la mesure est basée sur le raccordement au
+            <a
+              href="https://www.bipm.org/fr/measurement-units/"
+              class="link"
+              target="_blank"
+              >système international</a
+            >.
           </p>
-          <div class="cloud_ideas_container">
-            <span class="cloud_idea_1">Confiance</span>
-            <span class="cloud_idea_2">Maîtrise</span>
-            <span class="cloud_idea_3">Traçabilité</span>
-            <span class="cloud_idea_4">fiabilité</span>
-            <span class="cloud_idea_5">Robustesse</span>
-            <span class="cloud_idea_6">Gain de temps</span>
-            <span class="cloud_idea_7">Gain d'énergie</span>
+          <div class="examples_container">
+            <div class="pyramid-container">
+              <div class="pyramid-level-6"></div>
+              <div class="pyramid-level-5">SI</div>
+              <div class="pyramid-level-4">Etalon primaire</div>
+              <div class="pyramid-level-3">Etalon secondaire</div>
+              <div class="pyramid-level-2">Equipement de mesure</div>
+              <!-- <div class="pyramid-level-1">4<br />Psychologie</div> -->
+            </div>
+            <p class="examples">
+              Pyramide de raccordement au système international par
+              l'intermédiaire d'une chaîne
+              <span class="important_thing">ininterrompue et documentée</span>
+              d'étalonnages dont chacun contribue à l'incertitude de mesure
+            </p>
           </div>
           <p class="content">
-            Faire étalonner les équipements de mesure permet de
-            <span class="important_thing"
-              >connaître leur biais et donc de maîtriser le doute </span
-            >(diminuer l'incertitude) autour de la mesure. <br />
-            D'autres facteurs peuvent avoir une influence sur le résultat, des
-            études de
-            <span class="important_thing">
-              répétabilité ou de reproductibilité</span
-            >, des
-            <span class="important_thing">campagnes interlaboratoires</span> ou
-            une bibliographie peut permettre de quantifier ces facteurs.
+            La fonction métrologie peut être associée à plusieurs niveaux
+            d'exigence
           </p>
+          <div class="step_container">
+            <div class="step_1">
+              <h4 class="step_title">Mesure</h4>
+              <p class="step_content">Traçabilité du matériel de mesure</p>
+            </div>
+
+            <div class="step_2">
+              <h4 class="step_title">Essai à la demande</h4>
+              <p class="step_content">
+                +<br />Maîtrise documentée et standardisée
+              </p>
+            </div>
+            <div class="step_3">
+              <h4 class="step_title">Essai COFRAC</h4>
+              <p class="step_content">
+                +<br />Comparaison avec l'ext. <br />Audit externe COFRAC
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- QUI SECTION -->
+
       <section class="accordeon_section">
         <h2 class="accordeon_section_title">Qui ?</h2>
         <div class="accordeon_section_content">
+          <section class="logigram_container">
+            <div class="logigram_item">
+              <h3 class="logigram_item_title">Client</h3>
+              <div class="logigram_item_content">
+                Il défini le niveau d'exigence en fonction de son besoin
+              </div>
+            </div>
+            <div class="logigram_item">
+              <h3 class="logigram_item_title">Equipe projet</h3>
+              <div class="logigram_item_content">
+                Chef de projet ou chef de pôle<br />
+                Ingénieurs et techniciens<br />
+                Animateur métrologie
+              </div>
+            </div>
+            <div class="logigram_item">
+              <h3 class="logigram_item_title">
+                Laboratoire central de métrologie
+              </h3>
+              <div class="logigram_item_content">
+                Il pilote la fonction métrologie au CSTB<br />
+                Réalise des raccordement métrologiques<br />
+                Défini les procédures, et assure la traçabilité au SI<br />
+                Accompagne les équipes et coordonne la sous-traitance
+                (raccordement métrologique effectué à l'extérieur)
+              </div>
+            </div>
+            <div class="logigram_item">
+              <h3 class="logigram_item_title">
+                Prestataire métrologie extérieur
+              </h3>
+              <div class="logigram_item_content">
+                Effectue les raccordement métrologiques que le LCM ne peut pas
+                faire
+              </div>
+            </div>
+          </section>
           <p class="content">Qu'est-ce que vous vendez à vos clients ?</p>
           <div class="examples_container">
             <span class="examples">Des résultats de mesure</span>
@@ -117,7 +176,7 @@
                 alt="thermometer_symbol"
                 width="48px"
                 height="70px"
-                style="margin-left: 4em"
+                style="margin-left: 4em;"
               />
             </span>
 
@@ -131,6 +190,13 @@
             /></span>
           </div>
           <h3 class="quote">Tout le monde est concerné</h3>
+        </div>
+      </section>
+
+      <!-- OU SECTION -->
+      <section class="accordeon_section">
+        <h2 class="accordeon_section_title">Où ?</h2>
+        <div class="accordeon_section_content">
           <h3 class="section_subtitle">Concepts et vocabulaire</h3>
           <p class="content">
             <span class="important_thing">Etalonnage</span> : c'est comparer
@@ -166,6 +232,11 @@
           </p>
         </div>
       </section>
+
+      <!-- QUAND SECTION -->
+
+      <!-- COMMENT SECTION -->
+
       <section class="accordeon_section">
         <h2 class="accordeon_section_title">Comment ?</h2>
         <div class="accordeon_section_content">
@@ -232,9 +303,9 @@
             </div>
           </section>
           <!-- <li>
-            Au CSTB : qui est le LCM quelles sont ses missions. Qui sont les
-            animateurs métro : quelles sont leurs missions ? Quels outils ?
-          </li> -->
+      Au CSTB : qui est le LCM quelles sont ses missions. Qui sont les
+      animateurs métro : quelles sont leurs missions ? Quels outils ?
+    </li> -->
           <p class="content">
             Au CSTB, le Laboratoire Central de Métrologie (LCM) pilote la
             fonction métrologie (procédure, outils, coordination) et garantis le
@@ -294,18 +365,55 @@
               <h4 class="timeline_title">Envoi du rapport</h4>
             </div>
             <!-- <ul>
-              <li>Quelle méthode : quelles limites / hypothèses</li>
-              <li>
-                Identification du matériel : quelles performances dans quelles
-                limites ?
-              </li>
-              <li>
-                Traitement des données : corrections ? Traitement statistiques,
-                moyen ou temporel ?
-              </li>
-              <li>Maîtrise du risque : calcul d'incertitudes</li>
-            </ul> -->
+        <li>Quelle méthode : quelles limites / hypothèses</li>
+        <li>
+          Identification du matériel : quelles performances dans quelles
+          limites ?
+        </li>
+        <li>
+          Traitement des données : corrections ? Traitement statistiques,
+          moyen ou temporel ?
+        </li>
+        <li>Maîtrise du risque : calcul d'incertitudes</li>
+      </ul> -->
           </section>
+        </div>
+      </section>
+
+      <!-- POURQUOI SECTION -->
+
+      <section class="accordeon_section">
+        <h2 class="accordeon_section_title">Pourquoi ?</h2>
+        <div class="accordeon_section_content">
+          <p class="content">
+            Prendre en considération tous les aspects théoriques et pratiques
+            ainsi que leurs limites lors d'une mesure permet d'en
+            <span class="important_thing">assurer la validité</span> voire
+            d'évaluer le niveau de confiance que l'on a dans cette mesure
+            (incertitude de mesure)
+          </p>
+          <div class="cloud_ideas_container">
+            <span class="cloud_idea_1">Confiance</span>
+            <span class="cloud_idea_2">Maîtrise</span>
+            <span class="cloud_idea_3">Traçabilité</span>
+            <span class="cloud_idea_4">fiabilité</span>
+            <span class="cloud_idea_5">Robustesse</span>
+            <span class="cloud_idea_6">Gain de temps</span>
+            <span class="cloud_idea_7">Gain d'énergie</span>
+          </div>
+          <p class="content">
+            Faire étalonner les équipements de mesure permet de
+            <span class="important_thing"
+              >connaître leur biais et donc de maîtriser le doute </span
+            >(diminuer l'incertitude) autour de la mesure. <br />
+            D'autres facteurs peuvent avoir une influence sur le résultat, des
+            études de
+            <span class="important_thing">
+              répétabilité ou de reproductibilité</span
+            >, des
+            <span class="important_thing">campagnes interlaboratoires</span>
+            ou une bibliographie peut permettre de quantifier ces facteurs.
+          </p>
         </div>
       </section>
     </div>
