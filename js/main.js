@@ -18,9 +18,9 @@ const main = () => {
   accordeon.initAccordeon();
 
   const timelineEls = Array.from(
-    document.querySelectorAll(".timeline_container")
+    document.querySelectorAll(".timeline_full_container")
   );
-  timelineEls.forEach(timelineEl => {
+  timelineEls.forEach((timelineEl) => {
     const timeline = new Timeline(timelineEl);
     timeline.initTimeline();
   });

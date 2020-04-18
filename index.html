@@ -91,10 +91,27 @@
               d'étalonnages dont chacun contribue à l'incertitude de mesure
             </p>
           </div>
+          <h3 class="section_subtitle">Définitions</h3>
           <p class="content">
+            <span class="important_thing">Erreur</span> : c'est l'écart entre
+            l'indication de notre appareil et celle de l'étalon. On peut la
+            corriger par une régression, mais il restera toujours un résidu
+            (appelé erreur d'interpolation).
+          </p>
+
+          <p class="content">
+            <span class="important_thing">Incertitude</span> : c'est quantifier
+            le <span class="important_thing"> doute</span> que l'on a dans une
+            mesure. Pour cela, on utilise les informations à notre disposition
+            (incertitude d'étalonnage, erreur, dérive, stabilité, répétabilité
+            influence de la température ...). Si on n'a pas ou peu
+            d'informations, l'incertitude peut être très grande.
+          </p>
+
+          <h3 class="section_subtitle">
             La fonction métrologie peut être associée à plusieurs niveaux
             d'exigence
-          </p>
+          </h3>
           <div class="step_container">
             <div class="step_1">
               <h4 class="step_title">Mesure</h4>
@@ -108,9 +125,9 @@
               </p>
             </div>
             <div class="step_3">
-              <h4 class="step_title">Essai COFRAC</h4>
+              <h4 class="step_title">Essai accrédité</h4>
               <p class="step_content">
-                +<br />Comparaison avec l'ext. <br />Audit externe COFRAC
+                +<br />Etude interlaboratoires<br />Audit externe (COFRAC)
               </p>
             </div>
           </div>
@@ -171,15 +188,14 @@
               <img
                 src="img/thermometer.png"
                 alt="thermometer_symbol"
-                width="26px"
-                height="70px"
+                width="100px"
+                height="100px"
               />
               <img
                 src="img/Manometer.png"
                 alt="thermometer_symbol"
-                width="48px"
-                height="70px"
-                style="margin-left: 2em;"
+                width="69px"
+                height="100px"
               />
             </span>
 
@@ -287,75 +303,65 @@
 
           <!-- Equipment Timeline -->
 
-          <section class="timeline_container timeline_equipment">
-            <div class="timeline_item">
-              <h4 class="timeline_title">Achat</h4>
-              <p class="timeline_content">
-                Plage de mesure <br />
-                Type de sortie (A/N) <br />
-                Performances métrologiques <br />
-                Méthode de mesure
-              </p>
-            </div>
+          <section class="timeline_full_container">
+            <span class="left_arrow"><</span>
+            <span class="right_arrow">></span>
+            <div class="view_timeline">
+              <div class="timeline_container timeline_equipment">
+                <div class="timeline_item">
+                  <h4 class="timeline_title">Achat</h4>
+                  <p class="timeline_content">
+                    Plage de mesure <br />
+                    Type de sortie (A/N) <br />
+                    Performances métrologiques <br />
+                    Méthode de mesure
+                  </p>
+                </div>
 
-            <div class="timeline_item">
-              <h4 class="timeline_title">Configuration</h4>
-              <p class="timeline_content">
-                Configurer la sortie analogique (type et plage correspondante)
-                <br />
-                Unité de l'affichage <br />
-                Méthode de mesure ou résolution souhaitée
-              </p>
-            </div>
+                <div class="timeline_item">
+                  <h4 class="timeline_title">Configuration</h4>
+                  <p class="timeline_content">
+                    Configurer la sortie analogique (type et plage
+                    correspondante)
+                    <br />
+                    Unité de l'affichage <br />
+                    Méthode de mesure ou résolution souhaitée
+                  </p>
+                </div>
 
-            <div class="timeline_item">
-              <h4 class="timeline_title">Premier étalonnage</h4>
-              <p class="timeline_content">
-                Définir les consignes d'étalonnage <br />
-                Permet de connaître les erreurs de l'équipement (pour correction
-                ou pour évaluer l'incertitude)
-                <br />
-                Définir une périodicité d'étalonnage (12 à 36 mois)
-              </p>
-            </div>
+                <div class="timeline_item">
+                  <h4 class="timeline_title">Premier étalonnage</h4>
+                  <p class="timeline_content">
+                    Définir les consignes d'étalonnage <br />
+                    Permet de connaître les erreurs de l'équipement (pour
+                    correction ou pour évaluer l'incertitude)
+                    <br />
+                    Définir une périodicité d'étalonnage (12 à 36 mois)
+                  </p>
+                </div>
 
-            <div class="timeline_item">
-              <h4 class="timeline_title">Vérification intermédiaire</h4>
-              <p class="timeline_content">
-                Moyen interne de s'assurer avant ou après un essai que
-                l'équipement ne dérive pas, dans une certaine mesure (à définir)
-              </p>
-            </div>
+                <div class="timeline_item">
+                  <h4 class="timeline_title">Vérification intermédiaire</h4>
+                  <p class="timeline_content">
+                    Moyen interne de s'assurer avant ou après un essai que
+                    l'équipement ne dérive pas, dans une certaine mesure (à
+                    définir)
+                  </p>
+                </div>
 
-            <div class="timeline_item">
-              <h4 class="timeline_title">
-                Etalonnage n
-              </h4>
-              <p class="timeline_content">
-                Périodiquement, le capteur est étalonné pour évaluer sa dérive
-                et ajuster les corrections à appliquer<br />
-                La périodicté peut être revue si l'équipement ne dérive pas
-              </p>
+                <div class="timeline_item">
+                  <h4 class="timeline_title">
+                    Etalonnage n
+                  </h4>
+                  <p class="timeline_content">
+                    Périodiquement, le capteur est étalonné pour évaluer sa
+                    dérive et ajuster les corrections à appliquer<br />
+                    La périodicté peut être revue si l'équipement ne dérive pas
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
-
-          <h3 class="section_subtitle">Définitions</h3>
-          <p class="content">
-            <span class="important_thing">Erreur</span> : c'est l'écart entre
-            l'indication de notre appareil et celle de l'étalon. On peut la
-            corriger par une régression, mais il restera toujours un résidu
-            (appelé erreur d'interpolation).
-          </p>
-
-          <p class="content">
-            <span class="important_thing">Incertitude</span> : c'est quantifier
-            le <span class="important_thing"> doute</span> que l'on a dans une
-            mesure. Pour cela, on utilise les informations à notre disposition
-            (incertitude d'étalonnage, erreur, dérive, stabilité, répétabilité
-            influence de la température ...). Si on n'a pas ou peu
-            d'informations, l'incertitude peut être très grande.
-          </p>
-
           <h3 class="section_subtitle">
             Utiliser les données d'un certificat d'étalonnage
           </h3>
@@ -409,6 +415,21 @@
             résultats, on optimise les efforts à fournir et assure une
             traçabilité de l'affaire.
           </p>
+        </div>
+      </section>
+
+      <!-- RESSOURCES SECTION -->
+
+      <section class="accordeon_section">
+        <h2 class="accordeon_section_title">Ressources</h2>
+        <div class="accordeon_section_content">
+          <a href="" class="link" target="_blank">Procédures du LCM</a>
+          <a
+            href="http://www.cfmetrologie.com/fr/faq-mesure"
+            class="link"
+            target="_blank"
+            >Collège Français de Métrologie</a
+          >
         </div>
       </section>
     </div>
