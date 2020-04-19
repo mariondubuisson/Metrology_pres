@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
     entry: "./js/main.js",
     output: {
       path: path.resolve(__dirname, "dist"),
-      filename: "main.js"
+      filename: "main.js",
     },
     module: {
       rules: [
@@ -14,26 +14,30 @@ module.exports = (env, argv) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {
-            loader: "babel-loader"
-          }
+            loader: "babel-loader",
+          },
         },
         {
           test: /\.css$/i,
-          use: ["style-loader", "css-loader"]
-        }
-      ]
-    }
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        inject: "head",
+        template: "index.html",
+        hash: true,
+      }),
+    ],
   };
 
   if (argv.dev) {
     config.mode = "development";
     config.devServer = {
       compress: true,
-      port: 9000
+      port: 9000,
     };
-    config.plugins = [
-      new HtmlWebpackPlugin({ inject: "head", template: "index.html" })
-    ];
   }
 
   if (argv.prod) {
