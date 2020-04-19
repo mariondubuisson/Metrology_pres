@@ -31,6 +31,10 @@
   height: 670px;
 }
 
+.timeline_process {
+  height: 670px;
+}
+
 .timeline_container::before {
   content: "";
   position: absolute;

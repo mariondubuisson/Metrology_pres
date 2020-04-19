@@ -27,7 +27,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         inject: "head",
         template: "index.tpl.html",
-        filename: "../index.html",
+        filename: argv.dev ? "index.html" : "../index.html",
         hash: true,
       }),
     ],
