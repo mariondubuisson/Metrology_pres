@@ -116,6 +116,21 @@
           </p>
 
           <p class="content">
+            <span class="important_thing">Incertitude</span> : c'est quantifier
+            le <span class="important_thing"> doute</span> que l'on a dans une
+            mesure. Pour cela, on utilise les informations à notre disposition
+            (incertitude d'étalonnage, erreur, dérive, stabilité, répétabilité
+            influence de la température ...). Si on n'a pas ou peu
+            d'informations, l'incertitude peut être très grande.
+          </p>
+
+          <img
+            src="img/Process.jpg"
+            alt="calibration_process"
+            style="margin: 20px; align-self: center;"
+          />
+
+          <p class="content">
             <span class="important_thing"
               >Contrôle ou vérification intermédiaire</span
             >
@@ -125,13 +140,90 @@
             de mesure.
           </p>
 
+          <h3 class="section_subtitle">
+            Raccordement et suivi d'un équipement de mesure
+          </h3>
+          <!-- Equipment Timeline -->
+
+          <section class="timeline_full_container">
+            <span class="left_arrow">&lt;</span>
+            <span class="right_arrow">&gt;</span>
+            <div class="view_timeline">
+              <div class="timeline_container timeline_equipment">
+                <div class="timeline_item">
+                  <h4 class="timeline_title">1. Achat</h4>
+                  <p class="timeline_content">
+                    Plage de mesure <br />
+                    Type de sortie (A/N) <br />
+                    Performances métrologiques <br />
+                    Méthode de mesure
+                  </p>
+                </div>
+
+                <div class="timeline_item">
+                  <h4 class="timeline_title">2. Configuration</h4>
+                  <p class="timeline_content">
+                    Configurer la sortie analogique (type et plage
+                    correspondante)
+                    <br />
+                    Unité de l'affichage <br />
+                    Méthode de mesure ou résolution souhaitée
+                  </p>
+                </div>
+
+                <div class="timeline_item">
+                  <h4 class="timeline_title">3. Premier étalonnage</h4>
+                  <p class="timeline_content">
+                    Définir les consignes d'étalonnage <br />
+                    Permet de connaître les erreurs de l'équipement (pour
+                    correction ou pour évaluer l'incertitude)
+                    <br />
+                    Définir une périodicité d'étalonnage (12 à 36 mois)
+                  </p>
+                </div>
+
+                <div class="timeline_item">
+                  <h4 class="timeline_title">4. Vérification intermédiaire</h4>
+                  <p class="timeline_content">
+                    Moyen interne de s'assurer avant ou après un essai que
+                    l'équipement ne dérive pas, dans une certaine mesure (à
+                    définir)
+                  </p>
+                </div>
+
+                <div class="timeline_item">
+                  <h4 class="timeline_title">
+                    5. Etalonnage n
+                  </h4>
+                  <p class="timeline_content">
+                    Périodiquement, le capteur est étalonné pour évaluer sa
+                    dérive et ajuster les corrections à appliquer<br />
+                    La périodicté peut être revue si l'équipement ne dérive pas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <p class="content">
-            <span class="important_thing">Incertitude</span> : c'est quantifier
-            le <span class="important_thing"> doute</span> que l'on a dans une
-            mesure. Pour cela, on utilise les informations à notre disposition
-            (incertitude d'étalonnage, erreur, dérive, stabilité, répétabilité
-            influence de la température ...). Si on n'a pas ou peu
-            d'informations, l'incertitude peut être très grande.
+            La procédure
+            <a
+              href="
+            http://intranet.cstb.local/sites/dt/documentsQualite/TRONC%20COMMUN/Essais/AME_DT_R3.pdf"
+              class="link"
+              target="_blank"
+              >DT/AME</a
+            >
+            décrit en détail le suivi des équipements de mesure au CSTB
+            <br />
+            Toutes les informations sur les équipements de mesure, sont
+            accessibles par tous via la base
+            <a
+              href="https://metrologie.cstb.local/"
+              class="link"
+              target="_blank"
+              >fiche de vie</a
+            >.
           </p>
 
           <h3 class="section_subtitle">
@@ -142,19 +234,24 @@
             <div class="step_1">
               <h4 class="step_title">Mesure</h4>
               <p class="step_content">Traçabilité du matériel de mesure</p>
+              <p class="step_sub">A la carte</p>
             </div>
 
             <div class="step_2">
               <h4 class="step_title">Essai à la demande</h4>
               <p class="step_content">
-                +<br />Maîtrise documentée et standardisée
+                +<br /><br />Méthode standard, documentée<br /><br />
+                Maîtrise des facteurs influents
               </p>
+              <p class="step_sub">Suivant un référentiel</p>
             </div>
             <div class="step_3">
               <h4 class="step_title">Essai accrédité</h4>
               <p class="step_content">
-                +<br />Etude interlaboratoires<br />Audit externe (COFRAC)
+                +<br /><br />Etude interlaboratoires<br /><br />Maîtrise des
+                incertitudes de mesures<br /><br />Audit externe (COFRAC)
               </p>
+              <p class="step_sub">Suivant l'ISO 17025</p>
             </div>
           </div>
         </div>
@@ -165,24 +262,6 @@
       <section class="accordeon_section">
         <h2 class="accordeon_section_title">Qui est concerné ?</h2>
         <div class="accordeon_section_content">
-          <h3 class="section_subtitle">Les acteurs du processus affaire</h3>
-
-          <section class="logigram_top_container">
-            <div class="logigram_item">
-              <h3 class="logigram_item_title">Client</h3>
-              <p class="logigram_item_content">
-                Il défini le niveau d'exigence en fonction de son besoin
-              </p>
-            </div>
-            <div class="logigram_item">
-              <h3 class="logigram_item_title">Equipe projet <br /></h3>
-              <p class="logigram_item_content">
-                Elle étudie la demande du client et évalue sa faisabilité<br />
-                Elle propose au client une solution, coordonne, planifie et
-                réalise les mesures
-              </p>
-            </div>
-          </section>
           <h3 class="section_subtitle">
             Les acteurs de la fonction métrologie
           </h3>
@@ -192,13 +271,13 @@
                 Laboratoire central de métrologie
               </h3>
               <p class="logigram_item_content">
-                Il pilote la fonction métrologie au CSTB<br />
+                Il pilote la fonction métrologie au CSTB.<br />
                 Réalise des raccordements métrologiques (étalonnages et
                 vérification).<br />
-                Défini les procédures, et assure la traçabilité au SI<br />
+                Défini les procédures, et assure la traçabilité au SI.<br />
                 Accompagne les équipes et coordonne la sous-traitance
                 (raccordement métrologique effectué par un prestataire ou sur
-                site par une personne habilitée)
+                site par une personne habilitée).
               </p>
             </div>
 
@@ -208,11 +287,75 @@
               </h3>
               <p class="logigram_item_content">
                 Il s'assure que les équipements sont opérationels et que leur
-                raccordement métrologique est à jour. Il réalise ou s'assure que
-                les contrôles en services sont réalisés et enregistrés.
+                raccordement métrologique est à jour.<br />
+                Il évalue la capabilité et réalise ou s'assure que les contrôles
+                en services sont réalisés et enregistrés.
               </p>
             </div>
           </section>
+
+          <h3 class="section_subtitle">
+            La métrologie dans le processus affaire
+          </h3>
+
+          <section class="SIPOC_full_container">
+            <span class="left_arrow">&lt;</span>
+            <span class="right_arrow">&gt;</span>
+            <div class="view_SIPOC">
+              <div class="SIPOC_container">
+                <div class="SIPOC_item">
+                  <h4 class="SIPOC_item_header">Client</h4>
+                  <div class="SIPOC_item_content">
+                    Il exprime son besoin, définissant ainsi le niveau de
+                    maîtrise attendu.
+                  </div>
+                </div>
+
+                <div class="SIPOC_item">
+                  <h4 class="SIPOC_item_header">Equipe projet</h4>
+                  <div class="SIPOC_item_content">
+                    Etudie la faisabilité.<br />
+                    Identifie la méthode et les équipements de mesure. <br />
+                    Détermine les critères de capabilité = les performances
+                    métrologiques souhaitée (exactitude, répétabilité,
+                    incertitude ...).<br />
+                  </div>
+                </div>
+
+                <div class="SIPOC_item">
+                  <h4 class="SIPOC_item_header">Fonction métrologie</h4>
+                  <div class="SIPOC_item_content">
+                    L'animateur métrologie, par l'intermédiaire de raccordements
+                    métrologiques et de l'exploitation des documents à sa
+                    disposition va évaluer la capabilité des équipements de
+                    mesure.<br />
+                    La capabilité d'un équipement de mesure est liée à ses
+                    conditions d'utilisation.
+                  </div>
+                </div>
+
+                <div class="SIPOC_item">
+                  <h4 class="SIPOC_item_header">Technicien.ne.s mesures</h4>
+                  <div class="SIPOC_item_content">
+                    Réalise et enregistre les contrôles et vérifications
+                    intermédiaires prévus.<br />
+                    S'assure que l'équipement est utilisé comme prévu (plage de
+                    fonctionnement, réglages, méthode ...).
+                  </div>
+                </div>
+
+                <div class="SIPOC_item">
+                  <h4 class="SIPOC_item_header">Exploitation des mesures</h4>
+                  <div class="SIPOC_item_content">
+                    Utiliser les corrections issues des certificats
+                    d'étalonnage.<br />
+                    Evaluer le doute (incertitude) sur les mesures.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <h3 class="section_subtitle">Dans quelles activités ?</h3>
           <div class="examples_container">
             <span class="examples important_thing"
@@ -315,93 +458,22 @@
               </div>
             </div>
           </section>
-
-          <h3 class="section_subtitle">
-            Raccordement et suivi d'un équipement de mesure
-          </h3>
-
-          <!-- Equipment Timeline -->
-
-          <section class="timeline_full_container">
-            <span class="left_arrow">&lt;</span>
-            <span class="right_arrow">&gt;</span>
-            <div class="view_timeline">
-              <div class="timeline_container timeline_equipment">
-                <div class="timeline_item">
-                  <h4 class="timeline_title">1. Achat</h4>
-                  <p class="timeline_content">
-                    Plage de mesure <br />
-                    Type de sortie (A/N) <br />
-                    Performances métrologiques <br />
-                    Méthode de mesure
-                  </p>
-                </div>
-
-                <div class="timeline_item">
-                  <h4 class="timeline_title">2. Configuration</h4>
-                  <p class="timeline_content">
-                    Configurer la sortie analogique (type et plage
-                    correspondante)
-                    <br />
-                    Unité de l'affichage <br />
-                    Méthode de mesure ou résolution souhaitée
-                  </p>
-                </div>
-
-                <div class="timeline_item">
-                  <h4 class="timeline_title">3. Premier étalonnage</h4>
-                  <p class="timeline_content">
-                    Définir les consignes d'étalonnage <br />
-                    Permet de connaître les erreurs de l'équipement (pour
-                    correction ou pour évaluer l'incertitude)
-                    <br />
-                    Définir une périodicité d'étalonnage (12 à 36 mois)
-                  </p>
-                </div>
-
-                <div class="timeline_item">
-                  <h4 class="timeline_title">4. Vérification intermédiaire</h4>
-                  <p class="timeline_content">
-                    Moyen interne de s'assurer avant ou après un essai que
-                    l'équipement ne dérive pas, dans une certaine mesure (à
-                    définir)
-                  </p>
-                </div>
-
-                <div class="timeline_item">
-                  <h4 class="timeline_title">
-                    5. Etalonnage n
-                  </h4>
-                  <p class="timeline_content">
-                    Périodiquement, le capteur est étalonné pour évaluer sa
-                    dérive et ajuster les corrections à appliquer<br />
-                    La périodicté peut être revue si l'équipement ne dérive pas
-                  </p>
-                </div>
-              </div>
-            </div>
+          <h3 class="section_subtitle">Avancement CAPE</h3>
+          <section class="bar_graph">
+            <div class="bar_container full">VAC Essais</div>
+            <div class="bar_container half">VAC R&E</div>
+            <div class="bar_container full">EAU Essais</div>
+            <div class="bar_container quarter">EAU R&E</div>
+            <div class="bar_container trois_quart">EIT</div>
           </section>
 
           <p class="content">
-            La procédure
-            <a
-              href="
-            http://intranet.cstb.local/sites/dt/documentsQualite/TRONC%20COMMUN/Essais/AME_DT_R3.pdf"
-              class="link"
-              target="_blank"
-              >DT/AME</a
-            >
-            décrit en détail le suivi des équipements de mesure au CSTB
-            <br />
-            Toutes les informations sur les équipements de mesure, sont
-            accessibles par tous via la base
-            <a
-              href="https://metrologie.cstb.local/"
-              class="link"
-              target="_blank"
-              >fiche de vie</a
-            >.
+            Dans les activités du processus R3, l'intégration à la fonction
+            métrologie est acquise.<br />
+            Une phase d'optimisation est en cours, pour évaluer la capabilité
+            des équipements et mettre à jour les calculs d'incertitudes.
           </p>
+
           <h3 class="section_subtitle">Lors de l'étude de faisabilité</h3>
           <p class="content">
             Définir le niveau de maîtrise attendu (mesure, essai à la demande ou
@@ -425,14 +497,6 @@
       <section class="accordeon_section">
         <h2 class="accordeon_section_title">Pour quoi faire ?</h2>
         <div class="accordeon_section_content">
-          <h3 class="section_subtitle">
-            Utiliser les données d'un certificat d'étalonnage
-          </h3>
-          <img
-            src="img/Process.jpg"
-            alt="calibration_process"
-            style="margin: 20px; align-self: center;"
-          />
           <h3 class="section_subtitle">Lors de l'exploitation des résultats</h3>
           <p class="content">
             Corriger les mesures à partir des données d'étalonnage<br />

@@ -4,6 +4,7 @@
 import { Accordeon } from "./accordeon";
 import { Timeline } from "./timeline";
 import { detectBrowser } from "./compat";
+import { Sipoc } from "./SIPOC";
 
 import "../styles/style.css";
 
@@ -24,4 +25,8 @@ const main = () => {
     const timeline = new Timeline(timelineEl);
     timeline.initTimeline();
   });
+
+  const SIPOC = new Sipoc(document.querySelector(".SIPOC_full_container"));
+  console.log("this is SIPOC", SIPOC);
+  SIPOC.initSipoc();
 };
