@@ -27,6 +27,6 @@ const main = () => {
   });
 
   const SIPOC = new Sipoc(document.querySelector(".SIPOC_full_container"));
-  console.log("this is SIPOC", SIPOC);
+
   SIPOC.initSipoc();
 };

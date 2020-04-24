@@ -10,7 +10,7 @@
   flex-direction: column;
 
   /* border : 1px solid black; */
-  width: 75%;
+  width: 80%;
   padding: 0px;
   margin: 10px;
 }
@@ -34,7 +34,7 @@
   overflow: hidden;
   width: 80%;
   align-self: center;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 .accordeon_section_content--hide {
