@@ -73,6 +73,7 @@
   border-width: 2em 0 2em 20px;
   border-color: var(--brown) var(--brown) var(--brown) transparent;
   left: -5px;
+  top: 5px;
   z-index: -1;
 }
 
