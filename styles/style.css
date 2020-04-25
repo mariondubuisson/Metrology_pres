@@ -82,6 +82,10 @@ li {
   line-height: 2em;
 }
 
+.responsive_img {
+  max-width: 100%;
+}
+
 .examples {
   font-size: 1em;
   margin: 15px;
