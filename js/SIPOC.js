@@ -4,8 +4,7 @@ class Sipoc {
     this.viewRef = fullContainerRef.querySelector(".SIPOC_view");
     this.containerRef = fullContainerRef.querySelector(".SIPOC_container");
     this.items = this.createItems();
-    this.currentVisibleContent = this.items[0].content;
-
+    this.currentVisibleItem = this.items[0];
     this.rightArrow = fullContainerRef.querySelector(".right_arrow");
     this.leftArrow = fullContainerRef.querySelector(".left_arrow");
 
@@ -13,26 +12,18 @@ class Sipoc {
   }
 
   createItems = () => {
-    const items = this.containerRef.querySelectorAll(".SIPOC_item");
+    const itemNodes = this.containerRef.querySelectorAll(".SIPOC_item");
 
-    return Array.from(items).map((item) => ({
-      header: item.querySelector(".SIPOC_item_header"),
-      content: item.querySelector(".SIPOC_item_content"),
+    return Array.from(itemNodes).map((itemNode) => ({
+      itemNode,
+      headerNode: itemNode.querySelector(".SIPOC_item_header"),
     }));
   };
 
-  viewContentOnclickHeader = () => {
-    this.items.forEach((item) => {
-      item.header.onclick = () => {
-        this.currentVisibleContent.style.setProperty("visibility", "hidden");
-
-        item.content.style.setProperty("visibility", "visible");
-
-        this.currentVisibleContent = item.content;
-
-        // item.header.style.setProperty("color", "var(--brown)");
-      };
-    });
+  selectCurrentVisibleItem = (item) => {
+    this.currentVisibleItem.itemNode.classList.remove("SIPOC_item--selected");
+    item.itemNode.classList.add("SIPOC_item--selected");
+    this.currentVisibleItem = item;
   };
 
   viewResizing = () => {
@@ -72,7 +63,10 @@ class Sipoc {
   initSipoc = () => {
     this.swipe();
     this.viewResizing();
-    this.viewContentOnclickHeader();
+    this.selectCurrentVisibleItem(this.currentVisibleItem);
+    this.items.forEach((item) => {
+      item.headerNode.onclick = () => this.selectCurrentVisibleItem(item);
+    });
   };
 }
 

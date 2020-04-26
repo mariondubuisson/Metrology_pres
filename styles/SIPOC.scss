@@ -30,12 +30,29 @@
     align-items: center;
     position: relative;
 
-    &:nth-child(1) {
-      align-items: normal;
+    &--selected {
+      .SIPOC_item {
+        &_content {
+          visibility: visible;
+        }
+        &_header {
+          font-weight: bold;
+          color: var(--brown);
+
+          &::before {
+            border-color: #f7f5f2 #f7f5f2 #f7f5f2 var(--lightBrown);
+          }
+
+          &::after {
+            border-color: var(--lightBrown) var(--lightBrown) var(--lightBrown)
+              transparent;
+          }
+        }
+      }
     }
 
-    &:nth-child(1) &_content {
-      visibility: visible;
+    &:nth-child(1) {
+      align-items: normal;
     }
 
     &:last-child {
