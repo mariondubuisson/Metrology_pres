@@ -91,6 +91,12 @@ li {
   margin: 15px;
   line-height: 2em;
 }
+
+.footer {
+  visibility: hidden;
+  padding: 15px;
+  text-align: center;
+}
 /* see with js how to positionate the word in the cloud_ideas_container */
 .cloud_idea_1 {
   font-size: x-large;
