@@ -5,6 +5,7 @@ class Sipoc {
     this.containerRef = fullContainerRef.querySelector(".SIPOC_container");
     this.items = this.createItems();
     this.currentVisibleContent = this.items[0].content;
+
     this.rightArrow = fullContainerRef.querySelector(".right_arrow");
     this.leftArrow = fullContainerRef.querySelector(".left_arrow");
 
@@ -14,7 +15,7 @@ class Sipoc {
   createItems = () => {
     const items = this.containerRef.querySelectorAll(".SIPOC_item");
 
-    return Array.from(items).map((item, index) => ({
+    return Array.from(items).map((item) => ({
       header: item.querySelector(".SIPOC_item_header"),
       content: item.querySelector(".SIPOC_item_content"),
     }));
@@ -24,8 +25,12 @@ class Sipoc {
     this.items.forEach((item) => {
       item.header.onclick = () => {
         this.currentVisibleContent.style.setProperty("visibility", "hidden");
+
         item.content.style.setProperty("visibility", "visible");
+
         this.currentVisibleContent = item.content;
+
+        // item.header.style.setProperty("color", "var(--brown)");
       };
     });
   };
