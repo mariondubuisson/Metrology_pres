@@ -1,0 +1,114 @@
+.SIPOC {
+  &_full_container {
+    position: relative;
+    width: 100%;
+    padding: 0 25px;
+    --nSIPOC: 5;
+    --marginSIPOC: 4px;
+  }
+
+  &_view {
+    overflow: hidden;
+  }
+
+  &_container {
+    position: relative;
+    width: 100%;
+    min-width: 800px;
+    margin: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    transition: left 0.5s;
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / (var(--nSIPOC)) - var(--marginSIPOC) - 20px);
+    margin: var(--marginSIPOC);
+    align-items: center;
+    position: relative;
+
+    &:nth-child(1) {
+      align-items: normal;
+    }
+
+    &:nth-child(1) &_content {
+      visibility: visible;
+    }
+
+    &:last-child {
+      align-items: flex-end;
+    }
+
+    &_header {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: normal;
+      width: 100%;
+
+      height: 75px;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 0;
+
+      color: var(--lightBrown);
+      padding-left: 15px;
+      z-index: 0;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-width: 2em 0 2em 20px;
+        border-color: #f7f5f2 #f7f5f2 #f7f5f2 var(--brown);
+        right: -15px;
+        z-index: -1;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: calc(100% - 20px);
+        height: 0px;
+        position: absolute;
+        border-style: solid;
+        border-width: 2em 0 2em 20px;
+        border-color: var(--brown) var(--brown) var(--brown) transparent;
+        left: -5px;
+        top: 5px;
+        z-index: -1;
+        box-sizing: content-box;
+      }
+    }
+
+    &_content {
+      line-height: 2em;
+      font-size: 0.8em;
+      width: 200%;
+      padding: 15px;
+      background-color: var(--lightBrown);
+      box-shadow: var(--shadowSet);
+      visibility: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-width: 0 15px 15px 15px;
+        border-color: transparent transparent var(--lightBrown) transparent;
+        left: 50%;
+        top: calc(55px);
+        transform: translateX(-10px) translateY(100%);
+      }
+    }
+  }
+}

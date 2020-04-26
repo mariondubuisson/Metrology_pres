@@ -1,7 +1,7 @@
 class Sipoc {
   constructor(fullContainerRef) {
     this.fullContainerRef = fullContainerRef;
-    this.viewRef = fullContainerRef.querySelector(".view_SIPOC");
+    this.viewRef = fullContainerRef.querySelector(".SIPOC_view");
     this.containerRef = fullContainerRef.querySelector(".SIPOC_container");
     this.items = this.createItems();
     this.currentVisibleContent = this.items[0].content;

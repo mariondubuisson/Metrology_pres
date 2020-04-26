@@ -6,7 +6,7 @@ import { Timeline } from "./timeline";
 import { detectBrowser } from "./compat";
 import { Sipoc } from "./SIPOC";
 
-import "../styles/style.css";
+import "../styles/style.scss";
 
 detectBrowser();
 
