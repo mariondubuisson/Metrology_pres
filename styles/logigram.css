@@ -3,6 +3,7 @@
   text-align: center;
   width: 60%;
   margin: 10px;
+  box-shadow: var(--shadowSet);
 }
 
 .logigram_item_title {
