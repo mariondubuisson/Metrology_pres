@@ -7,9 +7,6 @@ export const detectBrowser = () => {
       displayNotCompatible();
       break;
 
-    case "edge":
-      displayNotCompatible();
-
     default:
       console.log("browser supported !");
   }
