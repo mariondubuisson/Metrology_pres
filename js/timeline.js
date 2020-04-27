@@ -25,7 +25,7 @@ class Timeline {
   };
 
   viewResizing = () => {
-    window.onresize = this.setArrowsVisibility;
+    window.addEventListener("resize", this.setArrowsVisibility);
   };
 
   setArrowsVisibility = () => {
