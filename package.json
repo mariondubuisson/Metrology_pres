@@ -5,7 +5,9 @@
   "main": "webpack.config.js",
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "detect-browser": "^5.0.0"
+    "detect-browser": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

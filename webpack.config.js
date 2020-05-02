@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.jsx?$/,
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
@@ -35,6 +35,9 @@ module.exports = (env, argv) => {
         hash: true,
       }),
     ],
+    resolve: {
+      extensions: [".js", ".jsx"],
+    },
   };
 
   if (argv.dev) {
