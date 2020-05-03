@@ -4,7 +4,7 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import { App } from "./React_components/app";
-import { Accordeon } from "./accordeon";
+
 import { Timeline } from "./timeline";
 import { detectBrowser } from "./compat";
 import { Sipoc } from "./SIPOC";
@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const main = () => {
-  const accordeon = new Accordeon(document.querySelector(".accordeon"));
-  accordeon.initAccordeon();
-
   const timelineEls = Array.from(
     document.querySelectorAll(".timeline_full_container")
   );
