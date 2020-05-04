@@ -5,7 +5,6 @@ import ReactDOM from "react-dom";
 import React from "react";
 import { App } from "./React_components/app";
 
-import { Timeline } from "./timeline";
 import { detectBrowser } from "./compat";
 import { Sipoc } from "./SIPOC";
 
@@ -19,14 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const main = () => {
-  const timelineEls = Array.from(
-    document.querySelectorAll(".timeline_full_container")
-  );
-  timelineEls.forEach((timelineEl) => {
-    const timeline = new Timeline(timelineEl);
-    timeline.initTimeline();
-  });
-
   const SIPOC = new Sipoc(document.querySelector(".SIPOC_full_container"));
 
   SIPOC.initSipoc();
