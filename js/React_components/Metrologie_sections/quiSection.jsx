@@ -1,4 +1,6 @@
 import React from "react";
+import { CarrousselViewer } from "../carrouselViewer";
+import { Processline } from "../processline";
 
 class QuiSection extends React.Component {
   render() {
@@ -43,89 +45,94 @@ class QuiSection extends React.Component {
         <h3 className="section_subtitle">
           La fonction métrologie dans le processus affaire
         </h3>
-
-        <section className="SIPOC_full_container">
-          <span className="left_arrow">&lt;</span>
-          <span className="right_arrow">&gt;</span>
-          <div className="SIPOC_view">
-            <div className="SIPOC_container">
-              <div className="SIPOC_item">
-                <h4 className="SIPOC_item_header">Client</h4>
-                <div className="SIPOC_item_content">
-                  Il exprime son besoin, définissant ainsi le{" "}
-                  <span className="important_thing">
-                    niveau de maîtrise attendu
-                  </span>
-                  .
-                </div>
-              </div>
-
-              <div className="SIPOC_item">
-                <h4 className="SIPOC_item_header">Equipe projet</h4>
-                <div className="SIPOC_item_content">
-                  Etudie la faisabilité.
-                  <br />
-                  Identifie la méthode et les équipements de mesure. <br />
-                  Détermine les{" "}
-                  <span className="important_thing">
-                    critères de capabilité
-                  </span>{" "}
-                  = les performances métrologiques souhaitée (exactitude,
-                  répétabilité, incertitude ...).
-                  <br />
-                </div>
-              </div>
-
-              <div className="SIPOC_item">
-                <h4 className="SIPOC_item_header">Fonction métrologie</h4>
-                <div className="SIPOC_item_content">
-                  L'animateur métrologie, par l'intermédiaire de raccordements
-                  métrologiques et de l'exploitation des documents à sa
-                  disposition va{" "}
-                  <span className="important_thing">
-                    évaluer la capabilité des équipements de mesure
-                  </span>
-                  .<br />
-                  La capabilité d'un équipement de mesure est liée à ses{" "}
-                  <span className="important_thing">
-                    conditions d'utilisation
-                  </span>
-                  .
-                </div>
-              </div>
-
-              <div className="SIPOC_item">
-                <h4 className="SIPOC_item_header">Technicien.ne.s mesures</h4>
-                <div className="SIPOC_item_content">
-                  <span className="important_thing">Réalise</span> et{" "}
-                  <span className="important_thing">enregistre</span> les
-                  contrôles et vérifications intermédiaires prévus.
-                  <br />
-                  S'assure que l'équipement est utilisé dans les{" "}
-                  <span className="important_thing">
-                    conditions prévues
-                  </span>{" "}
-                  (plage de fonctionnement, réglages, méthode ...).
-                </div>
-              </div>
-
-              <div className="SIPOC_item">
-                <h4 className="SIPOC_item_header">
-                  Exploitation
-                  <br />
-                  des mesures
-                </h4>
-                <div className="SIPOC_item_content">
-                  <span className="important_thing">Corriger</span> les mesures
-                  à partir des données d'étalonnage
-                  <br />
-                  <span className="important_thing">Evaluer le doute</span>{" "}
-                  (incertitude) sur les mesures.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CarrousselViewer>
+          <Processline
+            items={[
+              {
+                title: "Client",
+                content: (
+                  <>
+                    Il exprime son besoin, définissant ainsi le{" "}
+                    <span className="important_thing">
+                      niveau de maîtrise attendu
+                    </span>
+                    .
+                  </>
+                ),
+              },
+              {
+                title: "Equipe projet",
+                content: (
+                  <>
+                    Etudie la faisabilité. <br />
+                    Identifie la méthode et les équipements de mesure. <br />
+                    Détermine les{" "}
+                    <span className="important_thing">
+                      critères de capabilité
+                    </span>{" "}
+                    = les performances métrologiques souhaitée (exactitude,
+                    répétabilité, incertitude ...).
+                  </>
+                ),
+              },
+              {
+                title: "Fonction métrologie",
+                content: (
+                  <>
+                    L'animateur métrologie, par l'intermédiaire de raccordements
+                    métrologiques et de l'exploitation des documents à sa
+                    disposition va{" "}
+                    <span className="important_thing">
+                      évaluer la capabilité des équipements de mesure
+                    </span>
+                    .<br />
+                    La capabilité d'un équipement de mesure est liée à ses{" "}
+                    <span className="important_thing">
+                      conditions d'utilisation
+                    </span>
+                    .
+                  </>
+                ),
+              },
+              {
+                title: "Technicien.ne.s mesures",
+                content: (
+                  <>
+                    <span className="important_thing">Réalise</span> et{" "}
+                    <span className="important_thing">enregistre</span> les
+                    contrôles et vérifications intermédiaires prévus.
+                    <br />
+                    S'assure que l'équipement est utilisé dans les{" "}
+                    <span className="important_thing">
+                      conditions prévues
+                    </span>{" "}
+                    (plage de fonctionnement, réglages, méthode ...).
+                  </>
+                ),
+              },
+              {
+                title: (
+                  <>
+                    Exploitation
+                    <br />
+                    des mesures
+                  </>
+                ),
+                content: (
+                  <>
+                    <span className="important_thing"> Corriger</span> les
+                    mesures à partir des données d'étalonnage
+                    <br />
+                    <span className="important_thing">
+                      Evaluer le doute
+                    </span>{" "}
+                    (incertitude) sur les mesures.
+                  </>
+                ),
+              },
+            ]}
+          />
+        </CarrousselViewer>
 
         <h3 className="section_subtitle">Dans quelles activités ?</h3>
         <div className="examples_container">

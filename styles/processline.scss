@@ -1,37 +1,24 @@
-.SIPOC {
-  &_full_container {
-    position: relative;
-    width: 100%;
-    padding: 0 25px;
-    --nSIPOC: 5;
-    --marginSIPOC: 4px;
-  }
-
-  &_view {
-    overflow: hidden;
-  }
-
+.Processline {
   &_container {
-    position: relative;
+    --margin: 4px;
+
     width: 100%;
     min-width: 800px;
     margin: 0px;
-    left: 0px;
+
     display: flex;
-    justify-content: center;
-    transition: left 0.5s;
   }
 
   &_item {
     display: flex;
     flex-direction: column;
-    width: calc(100% / (var(--nSIPOC)) - var(--marginSIPOC) - 20px);
-    margin: var(--marginSIPOC);
+    width: calc(100% / (var(--n)) - var(--margin) - 20px);
+    margin: var(--margin);
     align-items: center;
     position: relative;
 
     &--selected {
-      .SIPOC_item {
+      .Processline_item {
         &_content {
           visibility: visible;
         }
