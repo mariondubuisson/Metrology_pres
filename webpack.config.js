@@ -1,6 +1,9 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var path = require("path");
 
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
+
 module.exports = (env, argv) => {
   var config = {
     entry: "./js/main.js",
@@ -34,6 +37,7 @@ module.exports = (env, argv) => {
         filename: argv.dev ? "index.html" : "../index.html",
         hash: true,
       }),
+      // new BundleAnalyzerPlugin(),
     ],
     resolve: {
       extensions: [".js", ".jsx"],
