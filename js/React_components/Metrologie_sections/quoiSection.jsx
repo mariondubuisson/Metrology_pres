@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline } from "../timeline";
+import { CarrousselViewer } from "../carrouselViewer";
 
 class QuoiSection extends React.Component {
   render() {
@@ -129,45 +130,42 @@ class QuoiSection extends React.Component {
         <h3 className="section_subtitle">
           Raccordement et suivi d'un équipement de mesure
         </h3>
-        <Timeline
-          timeline_type="timeline_equipment"
-          items={[
-            {
-              title: "1. Achat",
-              content: `Plage de mesure\n
-                          Type de sortie (A/N)\n
-                          Performances métrologiques\n
+        <CarrousselViewer>
+          <Timeline
+            timeline_type="timeline_equipment"
+            items={[
+              {
+                title: "1. Achat",
+                content: `Plage de mesure
+                          Type de sortie (A/N)
+                          Performances métrologiques
                           Méthode de mesure`,
-            },
-            {
-              title: "2. Configuration",
-              content: `Configurer la sortie analogique (type et plage
-                      correspondante)\n
-                      Unité de l'affichage\n
+              },
+              {
+                title: "2. Configuration",
+                content: `Configurer la sortie analogique (type et plage correspondante)
+                      Unité de l'affichage
                       Méthode de mesure ou résolution souhaitée`,
-            },
-            {
-              title: "3. Premier étalonnage",
-              content: `Définir les consignes d'étalonnage\n
-                      Permet de connaître les erreurs de l'équipement
-                      (pour correction ou pour évaluer l'incertitude)\n
+              },
+              {
+                title: "3. Premier étalonnage",
+                content: `Définir les consignes d'étalonnage
+                      Permet de connaître les erreurs de l'équipement (pour correction ou pour évaluer l'incertitude)
                       Définir une périodicité d'étalonnage (12 à 36 mois)`,
-            },
-            {
-              title: "4. Vérification intermédiaire",
-              content: `Moyen interne de s'assurer avant ou après un essai
-                      que l'équipement ne dérive pas, dans une certaine
-                      mesure (à définir)`,
-            },
-            {
-              title: "5. Etalonnage n",
-              content: `Périodiquement, le capteur est étalonné pour évaluer
-                      sa dérive et ajuster les corrections à appliquer\n
-                      La périodicté peut être revue si l'équipement ne
-                      dérive pas`,
-            },
-          ]}
-        />
+              },
+              {
+                title: "4. Vérification intermédiaire",
+                content: `Moyen interne de s'assurer avant ou après un essai que l'équipement ne dérive pas, dans une certaine
+              mesure (à définir)`,
+              },
+              {
+                title: "5. Etalonnage n",
+                content: `Périodiquement, le capteur est étalonné pour évaluer sa dérive et ajuster les corrections à appliquer
+                      La périodicté peut être revue si l'équipement ne dérive pas`,
+              },
+            ]}
+          />
+        </CarrousselViewer>
 
         <p className="content">
           La procédure{" "}

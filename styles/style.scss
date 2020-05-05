@@ -6,6 +6,8 @@
 @import url("logigram.css");
 @import url("bargraph.css");
 @import "SIPOC";
+@import "carrousselViewer.scss";
+
 /* Permet de définir la dimension des box incluant Border & Padding */
 *,
 *::after,
@@ -43,6 +45,7 @@ body {
   padding: 20px;
   margin: 0px;
   font-size: 1em;
+  white-space: pre-line;
 }
 .content {
   font-size: 1em;

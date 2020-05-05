@@ -1,0 +1,40 @@
+/* Style about navigation arrows */
+
+.left_arrow,
+.right_arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--lightGrey);
+  font-size: 2em;
+
+  &:hover {
+    color: var(--brown);
+  }
+}
+.left_arrow {
+  left: 0;
+}
+
+.right_arrow {
+  right: 0;
+}
+
+// Viewers and containers style
+
+.carroussel {
+  width: 100%;
+  position: relative;
+  padding: 0 25px;
+
+  &_viewer {
+    overflow: hidden;
+  }
+  &_container {
+    position: relative;
+    left: 0px;
+    transition: left 0.5s;
+    display: inline-block;
+  }
+}

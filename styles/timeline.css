@@ -1,9 +1,6 @@
 /* Timeline general style */
-.timeline_full_container {
-  width: 100%;
-  position: relative;
-  padding: 0 25px;
 
+.timeline_container {
   --margin: 20px;
   --minWidthItem: 185px;
   --pointRadius: 7px;
@@ -11,13 +8,7 @@
   --timelineColor: var(--lightGrey);
   --pointColor: var(--brown);
   --titleColor: var(--brown);
-}
 
-.view_timeline {
-  overflow: hidden;
-}
-
-.timeline_container {
   width: 100%;
   min-width: calc((var(--minWidthItem) + var(--margin)) * (var(--n) + 1) / 2);
   margin: 0px;
@@ -63,6 +54,7 @@
   align-items: center;
   line-height: 2em;
   font-size: 0.8em;
+  white-space: pre-line;
 }
 
 .timeline_item {
@@ -172,29 +164,4 @@
 
 .timeline_item:nth-child(10) {
   left: calc(1000% / (var(--n) + 1));
-}
-
-/* Style about navigation arrows */
-
-.left_arrow,
-.right_arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--lightGrey);
-  font-size: 2em;
-}
-
-.left_arrow:hover,
-.right_arrow:hover {
-  color: var(--brown);
-}
-
-.left_arrow {
-  left: 0;
-}
-
-.right_arrow {
-  right: 0;
 }
