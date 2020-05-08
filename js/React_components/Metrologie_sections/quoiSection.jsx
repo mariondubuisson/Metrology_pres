@@ -1,19 +1,25 @@
 import React from "react";
 import { Timeline } from "../timeline";
 import { CarrousselViewer } from "../carrouselViewer";
+import { Paragraph } from "../paragraph";
 
 class QuoiSection extends React.Component {
   render() {
     return (
       <>
-        <p className="content">
-          Métrologie = science de la mesure <br />
-          Discipline qui comprend tous les aspects théoriques et pratiques des
-          mesurages. <br />
-          Elle rassemble l'ensemble des techniques et savoirs faire qui
-          permettent de réaliser des mesures, de les interpréter et d'assurer
-          leur fiabilité.
-        </p>
+        <Paragraph
+          subtitle="Métrologie, science de la mesure"
+          content={
+            <>
+              Discipline qui comprend tous les aspects théoriques et pratiques
+              des mesurages. <br />
+              Elle rassemble l'ensemble des techniques et savoirs faire qui
+              permettent de réaliser des mesures, de les interpréter et
+              d'assurer leur fiabilité.
+            </>
+          }
+        />
+
         <div className="examples_container">
           <span className="examples">
             <img
@@ -40,6 +46,7 @@ class QuoiSection extends React.Component {
           </span>
         </div>
         <h3 className="quote">S'il y a mesure il y a métrologie</h3>
+
         <p className="content">
           La science de la mesure est basée sur le raccordement au{" "}
           <a
@@ -73,60 +80,73 @@ class QuoiSection extends React.Component {
             d'étalonnages dont chacun contribue à l'incertitude de mesure
           </p>
         </div>
-        <h3 className="section_subtitle">Politique du CSTB</h3>
-        <p className="content">
-          Tous les équipements de mesure doivent faire l'objet d'une traçabilité
-          au Système International en étant intégrés au processus{" "}
-          <span className="important_thing">Fonction Métrologie</span> du CSTB.
-        </p>
-        <h3 className="section_subtitle">Définitions</h3>
-        <p className="content">
-          <span className="important_thing">Etalonnage</span> : c'est comparer
-          l'indication de notre équipement avec celle d'un étalon. Il est
-          réalisé avec maîtrise des incertitudes suivant une procédure et fait
-          l'objet d'un certificat d'étalonnage.
-          <br />
-          On en déduit une relation pour corriger les indications de
-          l'équipement.
-        </p>
-        <p className="content">
-          <span className="important_thing">Vérification</span> : c'est comparer
-          l'indication de notre équipement avec celle d'un étalon. Elle est
-          réalisée avec maîtrise des incertitudes suivant une procédure et fait
-          l'objet d'un constat de vérification.
-          <br />
-          On en déduit une conformité par rapport à une spécification.
-        </p>
-        <p className="content">
-          <span className="important_thing">Erreur</span> : c'est l'écart entre
-          l'indication de notre appareil et celle de l'étalon. On peut la
-          corriger par une régression, mais il restera toujours un résidu
-          (appelé erreur d'interpolation).
-        </p>
-        <p className="content">
-          <span className="important_thing">Incertitude</span> : c'est
-          quantifier le <span className="important_thing"> doute</span> que l'on
-          a dans une mesure. Pour cela, on utilise les informations à notre
-          disposition (incertitude d'étalonnage, erreur, dérive, stabilité,
-          répétabilité influence de la température ...). Si on n'a pas ou peu
-          d'informations, l'incertitude peut être très grande.
-        </p>
-        <img
-          className="responsive_img"
-          src="img/Process.jpg"
-          alt="calibration_process"
-          style={{ margin: "20px", alignSelf: "center" }}
+
+        <Paragraph
+          subtitle="Politique du CSTB"
+          content={
+            <>
+              Tous les équipements de mesure doivent faire l'objet d'une
+              traçabilité au Système International en étant intégrés au
+              processus{" "}
+              <span className="important_thing">Fonction Métrologie</span> du
+              CSTB.
+            </>
+          }
         />
-        <p className="content">
-          <span className="important_thing">
-            Contrôle ou vérification intermédiaire
-          </span>
-          : c'est contrôler avant et/ou après un essai que la réponse de
-          l'équipement est comprise dans un tunnel d'acceptabilité.
-          <br />
-          On en déduit si l'équipement dérive ou s'il y a une anomalie sur la
-          chaîne de mesure.
-        </p>
+        <Paragraph
+          subtitle="Définitions"
+          content={
+            <>
+              <span className="important_thing">Etalonnage</span> : c'est
+              comparer l'indication de notre équipement avec celle d'un étalon.
+              Il est réalisé avec maîtrise des incertitudes suivant une
+              procédure et fait l'objet d'un certificat d'étalonnage.
+              <br />
+              On en déduit une relation pour corriger les indications de
+              l'équipement.
+              <br />
+              <br />
+              <span className="important_thing">Vérification</span> : c'est
+              comparer l'indication de notre équipement avec celle d'un étalon.
+              Elle est réalisée avec maîtrise des incertitudes suivant une
+              procédure et fait l'objet d'un constat de vérification.
+              <br />
+              On en déduit une conformité par rapport à une spécification.
+              <br />
+              <br />
+              <span className="important_thing">Erreur</span> : c'est l'écart
+              entre l'indication de notre appareil et celle de l'étalon. On peut
+              la corriger par une régression, mais il restera toujours un résidu
+              (appelé erreur d'interpolation).
+              <br />
+              <br />
+              <span className="important_thing">Incertitude</span> : c'est
+              quantifier le <span className="important_thing"> doute</span> que
+              l'on a dans une mesure. Pour cela, on utilise les informations à
+              notre disposition (incertitude d'étalonnage, erreur, dérive,
+              stabilité, répétabilité influence de la température ...). Si on
+              n'a pas ou peu d'informations, l'incertitude peut être très
+              grande.
+              <br />
+              <img
+                className="responsive_img"
+                src="img/Process.jpg"
+                alt="calibration_process"
+                style={{ margin: "20px", alignSelf: "center" }}
+              />
+              <br />
+              <span className="important_thing">
+                Contrôle ou vérification intermédiaire
+              </span>
+              : c'est contrôler avant et/ou après un essai que la réponse de
+              l'équipement est comprise dans un tunnel d'acceptabilité.
+              <br />
+              On en déduit si l'équipement dérive ou s'il y a une anomalie sur
+              la chaîne de mesure.
+            </>
+          }
+        />
+
         <h3 className="section_subtitle">
           Raccordement et suivi d'un équipement de mesure
         </h3>
