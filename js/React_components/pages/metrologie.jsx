@@ -6,6 +6,7 @@ import { CommentSection } from "../Metrologie_sections/commentSection";
 import { PourquoiSection } from "../Metrologie_sections/pourquoiSection";
 import { RessourcesSection } from "../Metrologie_sections/ressourcesSection";
 import { TitleSlide } from "../titleSlide";
+import { Link } from "@reach/router";
 
 const Metrologie = () => (
   <div>
@@ -33,7 +34,9 @@ const Metrologie = () => (
     </div>
 
     <section className="footer">
-      <p className="content">Stay curious</p>
+      <Link to="/incertitude" className="down_arrow">
+        &lt;
+      </Link>
     </section>
   </div>
 );
